@@ -1,0 +1,19 @@
+# Count the number of each letter in a sentence
+
+sentence = input("Please enter a sentence: ").strip().lower()
+
+characters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '.', '?', '!', '.', "'", '"']
+
+word_list = (sentence.split())
+ch_list = []
+for word in word_list:
+    for i in range(len(word)):
+        ch_list.append(word[i])
+
+letter_count = {}
+for letter in ch_list:
+    letter_count[letter] = ch_list.count(letter)
+
+print(letter_count)
+
+
